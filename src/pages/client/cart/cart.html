@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store | Carrito</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="app">
+    <header class="header">
+        <a class="header__brand" href="../home/home.html">Food Store</a>
+
+        <nav class="header__nav">
+            <a class="header__link" href="../home/home.html">Catálogo</a>
+            <a class="header__link header__link--active" href="./cart.html">Carrito <span id="cartCount" class="badge">0</span>
+            </a>
+            <button id="logoutButton" class="btn btn--ghost" type="button">Cerrar sesión</button>
+        </nav>
+    </header>
+
+    <main class="carrito">
+        <div class="carrito__top">
+            <h1 class="catalogo__titulo">Tu carrito</h1>
+            <a class="btn btn--ghost" href="../home/home.html">← Seguir comprando</a>
+        </div>
+
+        <div id="carritoVacio" class="vacio" hidden>
+            <p class="vacio__texto">Tu carrito está vacío.</p>
+            <a class="btn btn--primary" href="../home/home.html">Ir al catálogo</a>
+        </div>
+
+        <div id="carritoContenido" class="carrito__contenido" hidden>
+            <section class="carrito__items">
+                <div class="cart-head" aria-hidden="true">
+                    <span>Producto</span>
+                    <span>Precio</span>
+                    <span>Cantidad</span>
+                    <span>Subtotal</span>
+                    <span></span>
+                </div>
+                <ul id="listaCarrito" class="cart-lista"></ul>
+            </section>
+
+            <aside class="resumen">
+                <h2 class="resumen__titulo">Resumen</h2>
+                <div class="resumen__fila">
+                    <span>Productos</span>
+                    <span id="resumenCantidad">0</span>
+                </div>
+                <div class="resumen__fila resumen__fila--total">
+                    <span>Total</span>
+                    <span id="totalCarrito">$ 0,00</span>
+                </div>
+                <button id="btnVaciar" class="btn btn--danger btn--block" type="button">Vaciar carrito</button>
+            </aside>
+        </div>
+    </main>
+
+    <script type="module" src="./cart.ts"></script>
+</body>
+
+</html>
