@@ -13,7 +13,7 @@ Es la continuación del Trabajo Práctico Integrador de TypeScript (registro, lo
 
 ## Enlance de video
 
-[Explicación del código] ()
+[Explicación del código] (https://drive.google.com/file/d/1mF51QkX7E-DjjcvegOlal-QwZd_SaUsm/view?usp=sharing)
 
 ## Requisitos
 
